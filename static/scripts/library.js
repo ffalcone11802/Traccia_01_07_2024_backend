@@ -94,7 +94,7 @@ function Library(collections) {
     }
 }
 
-fetch("https://7a5859ec-7929-45bd-99b7-8ff5c2b36776-00-2fpt19wkinjn8.janeway.replit.dev/api/collections/")
+fetch("https://APP_DOMAIN/api/collections/")
 .then((response) => response.json())
 .then(json => {
   const myLibrary = new Library(json.collection);
