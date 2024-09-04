@@ -1,5 +1,4 @@
 const mongoose = require("mongoose")
-const bcrypt = require("bcrypt")
 const Item = require("./itemModel")
 
 const userSchema = new mongoose.Schema({
