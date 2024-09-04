@@ -5,7 +5,6 @@ const mongoose = require("mongoose")
 const collectionRoutes = require("./routes/collections")
 const recommendationRoutes = require("./routes/recommendations")
 const userRouter = require("./routes/users")
-const {login} = require("./controllers/userController")
 
 const path = "dbURI"
 
@@ -17,7 +16,6 @@ app.use(cookieParser())
 app.use("/api/collections", collectionRoutes)
 app.use("/api/recommendations", recommendationRoutes)
 app.use("/api/users", userRouter)
-app.post("/api/login", login) // ... or /api/users/login ...
 
 mongoose.connect(path).then(() => {
   console.log("database connected")
